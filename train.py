@@ -37,8 +37,8 @@ def train(epochs,batch_size,validation_split):
                      callbacks=[checkpointer])
     
     # save precision & recall result for each epoch
-    val_precision=history.history['val_precision_4']
-    val_recall=history.history['val_recall_4']
+    val_precision=history.history['val_precision']
+    val_recall=history.history['val_recall']
     dic={'val_precision':val_precision,'val_recall':val_recall}
     
     with open('./tmp/metric_scores.json','w') as f:

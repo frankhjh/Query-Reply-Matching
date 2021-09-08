@@ -8,7 +8,7 @@ import json
 def predict():
     
     # load precision and recall stored in json
-    with open('./tmp/val_prec_recall.json','r') as f:
+    with open('./tmp/metric_scores.json','r') as f:
         dic=json.load(f)
     
     val_precision=dic['val_precision']
