@@ -14,7 +14,7 @@ The final F1 score on test set is **0.76341018**, the rank is top **15%**
 ## Performance on Validation set
 Below shows the Precision/Recall/F1 score of model on validation set in each epoch during training.
 
-
+![Precision/Recall/F1 score](https://github.com/frankhjh/Reply-Query-Matching/blob/main/tmp/metric_scores.png  'Model Performance on Validation set')
 
 
 
