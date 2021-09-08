@@ -33,7 +33,8 @@ Try to run the following command to train the Bert model.
 you can change the parameters as you want. My advice is to train the model with GPU, otherwise, it may take long time for training if you just use CPU.
 
 ### step 3
-After you finish training the model, you can use model to check the performance on test set.
+After you finish training the model, you can use model to check the performance on test set by run the following command.
+
 `python submit.py`
 
 The final prediction will be stored in 
