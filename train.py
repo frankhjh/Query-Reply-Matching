@@ -21,6 +21,8 @@ def train(epochs,batch_size,validation_split):
     print('>>data loaded.')
     # model checkpoint
     base_path='./tmp/checkpoint'
+    if not os.path.exists(base_path):
+        os.makedirs(base_path)
     checkpointer=ModelCheckpoint(filepath=os.path.join(base_path,'{epoch:02d}.ckpt'),
                                  save_best_only=False,
                                  verbose=1,

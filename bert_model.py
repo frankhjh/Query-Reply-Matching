@@ -30,6 +30,7 @@ def create_bert_model():
 
     # add some layers 
     inputs=base_model.inputs[:2] # no position embedding
+    x=base_model.layers[-7].output
     x=Lambda(lambda x:x[:,0])(x) # [CLS]
     x=Dense(units=128,activation=K.tanh)(x)
     x=Dropout(0.2)(x)
