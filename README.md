@@ -1,4 +1,4 @@
-# Use Bert to solve Reply-Query-Matching Task
+# Use BERT to solve Reply-Query-Matching Task
 
 ## Basic Introduction
 The company who hold this competition is *Shell House-Searching*, one of the most famous Internet real estate company in China. In order to provide better reply service for online queries from large volume of clients, it requires a AI model for doing this, that is, given the real query data, it requires us to build a model to find the best/realistic reply.
