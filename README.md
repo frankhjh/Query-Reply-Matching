@@ -7,7 +7,7 @@ The company who hold this competition is *Shell House-Searching*, one of the mos
 The form of data it provides is text,including the query and reply. For each query, it provides several replies, one of them is real reply, while the others are all fake. The **query-real reply** pair is labeled as **1** and the **query-fake reply** pair is labeled as **0**. our aim is to train a classification model to identify them.
 
 ## Model
-My first idea is to use CNN and LSTM, but unfortunately,both of them have poor performance on the test set.I also used the stacking method to combine them, but the performance improvement is also not significant. Then I tried the famous pre-trained model:**Bert**. as I expected, the performance of it on this task is really good.
+My first idea is to use CNN and LSTM, but unfortunately,both of them have poor performance on the test set.I also used the stacking method to combine them, but the performance improvement is also not significant. Then I tried the famous pre-trained model:**BERT**. as I expected, the performance of it on this task is really good.
 
 The final F1 score on test set is **0.76341018**, the rank is top **15%**
 
@@ -23,10 +23,10 @@ Install the package **keras-bert**
 
 `pip install keras-bert`
 
-It is a package can help you to build your Bert model with Keras API
+It is a package can help you to build your BERT model with Keras API
 
 ### step 2
-Try to run the following command to train the Bert model.
+Try to run the following command to train the BERT model.
 
 `python train.py --epochs 10 --batch_size 64 --validation_split 0.1`
 
